@@ -453,6 +453,35 @@ img{max-width:100%;display:block}
   box-shadow: 0 14px 40px rgba(0,0,0,.05);
 }
 
+/* Why choose us */
+.why-grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap:16px;
+}
+.why-card{
+  grid-column: span 4;
+  padding:18px 18px 16px;
+}
+.why-card h3{
+  margin-top:12px;
+}
+.why-card__icon{
+  width:40px;
+  height:40px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(10,10,10,.08);
+  background: rgba(255,255,255,.92);
+  box-shadow: 0 10px 26px rgba(0,0,0,.03);
+  color: rgba(11,11,14,.82);
+}
+.why-card__icon svg{
+  width:20px;
+  height:20px;
+}
+
 /* Services cards */
 .card--service{
   padding:18px 18px 16px;
@@ -684,6 +713,7 @@ img{max-width:100%;display:block}
   .grid3{grid-template-columns:1fr}
   .tile{grid-column: span 6}
   .project-card{grid-column: span 6}
+  .why-card{grid-column: span 6}
   .footergrid{grid-template-columns:1fr}
   .twocol{grid-template-columns:1fr}
   .trust-strip__inner{grid-template-columns:1fr 1fr}
@@ -696,6 +726,7 @@ img{max-width:100%;display:block}
   .h1--premium{font-size:38px}
   .tile{grid-column: span 12}
   .project-card{grid-column: span 12}
+  .why-card{grid-column: span 12}
   .formgrid{grid-template-columns:1fr}
   .trust-strip__inner{grid-template-columns:1fr}
 }
