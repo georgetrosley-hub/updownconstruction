@@ -44,6 +44,38 @@
       "summary": "Exterior upgrades scoped clearly and built to last."
     }
   ],
+  "featuredProjects": [
+    {
+      "title": "Paver Patio Refresh",
+      "town": "Cherry Hill, NJ",
+      "summary": "New paver patio with proper base prep and clean edge restraints for long-term stability.",
+      "images": {
+        "cover": "assets/projects/patio-cover.jpg",
+        "before": "assets/projects/patio-before.jpg",
+        "after": "assets/projects/patio-after.jpg"
+      }
+    },
+    {
+      "title": "Drainage & Downspout Routing",
+      "town": "Voorhees, NJ",
+      "summary": "Water redirected away from the foundation with improved grading and drainage routing.",
+      "images": {
+        "cover": "assets/projects/drainage-cover.jpg",
+        "before": "assets/projects/drainage-before.jpg",
+        "after": "assets/projects/drainage-after.jpg"
+      }
+    },
+    {
+      "title": "Hardscape Border & Bed Cleanup",
+      "town": "Washington Township, NJ",
+      "summary": "Crisp borders, refreshed beds, and a finished look that holds up season after season.",
+      "images": {
+        "cover": "assets/projects/border-cover.jpg",
+        "before": "assets/projects/border-before.jpg",
+        "after": "assets/projects/border-after.jpg"
+      }
+    }
+  ],
   "reviews": [
     {
       "name": "Local Homeowner",

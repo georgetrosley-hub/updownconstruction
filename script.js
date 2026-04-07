@@ -85,6 +85,66 @@ function buildTestimonials(reviews) {
   });
 }
 
+function projectImageMarkup(images) {
+  const cover = images?.cover;
+  const before = images?.before;
+  const after = images?.after;
+
+  // Structure supports before/after later. If cover is present, use it.
+  if (cover) {
+    return `
+      <div class="project-media">
+        <img class="project-img" src="${escapeHtml(cover)}" alt="" loading="lazy" />
+      </div>
+    `;
+  }
+
+  if (before && after) {
+    return `
+      <div class="project-media project-media--ba">
+        <div class="project-ba">
+          <div class="project-ba__label">Before</div>
+          <img class="project-img" src="${escapeHtml(before)}" alt="" loading="lazy" />
+        </div>
+        <div class="project-ba">
+          <div class="project-ba__label">After</div>
+          <img class="project-img" src="${escapeHtml(after)}" alt="" loading="lazy" />
+        </div>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="project-media">
+      <div class="project-img project-img--ph" aria-hidden="true"></div>
+    </div>
+  `;
+}
+
+function buildFeaturedProjects(projects) {
+  const root = document.querySelector("[data-featured-projects]");
+  if (!root) return;
+  root.innerHTML = "";
+
+  (projects || []).slice(0, 6).forEach((p) => {
+    const a = document.createElement("a");
+    a.className = "project-card";
+    a.href = "projects.html";
+    a.setAttribute("aria-label", `${p.title || "Project"} — view projects`);
+
+    a.innerHTML = `
+      ${projectImageMarkup(p.images)}
+      <div class="project-body">
+        <div class="project-title">${escapeHtml(p.title || "")}</div>
+        <div class="project-meta">${escapeHtml(p.town || "")}</div>
+        <div class="project-desc">${escapeHtml(p.summary || "")}</div>
+      </div>
+    `;
+
+    root.appendChild(a);
+  });
+}
+
 function buildServiceAreaList(area) {
   const el = document.querySelector("[data-service-area]");
   if (!el) return;
@@ -224,6 +284,7 @@ async function init() {
     setHref("[data-email-link]", `mailto:${site?.contact?.email || ""}`);
 
     buildServicesCards(site.services || []);
+    buildFeaturedProjects(site.featuredProjects || []);
     buildTestimonials(site.reviews || []);
     buildServiceAreaList(site.serviceArea || {});
     injectJsonLd(site);
