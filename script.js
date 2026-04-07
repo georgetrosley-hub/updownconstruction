@@ -58,11 +58,13 @@ function buildServicesCards(services) {
   root.innerHTML = "";
   (services || []).forEach((s) => {
     const div = document.createElement("div");
-    div.className = "card";
+    div.className = "card card--premium card--service";
     div.innerHTML = `
-      <h3>${escapeHtml(s.title || "")}</h3>
-      <p>${escapeHtml(s.summary || "")}</p>
-      <div class="meta">Free in-person estimate • South Jersey</div>
+      <div class="service-card__head">
+        <h3>${escapeHtml(s.title || "")}</h3>
+        <div class="service-card__badge">Built for durability</div>
+      </div>
+      <p class="service-card__desc">${escapeHtml(s.summary || "")}</p>
     `;
     root.appendChild(div);
   });
