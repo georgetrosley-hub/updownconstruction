@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Up and Down Construction</title>
+    <meta name="description" content="Recent remodeling projects across South Jersey. Kitchens, bathrooms, basements, and more." />
+    <meta name="theme-color" content="#0b0b0e" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="partials.js" defer></script>
+    <script src="script.js" defer></script>
+    <script type="application/ld+json" data-jsonld="LocalBusiness">{}</script>
+  </head>
+  <body>
+    <div data-header></div>
+
+    <main id="main">
+      <section class="pagehead">
+        <div class="container">
+          <h1>Projects</h1>
+          <p>
+            This page is ready for your before/after photos. For now, it uses sleek placeholders so the layout feels finished while you gather images.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top:0">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Gallery</h2>
+              <p>Swap placeholders with real images by replacing `assets/projects/*.jpg` and updating labels.</p>
+            </div>
+            <a class="btn primary" data-scroll-to="estimate" href="#estimate">Free estimate</a>
+          </div>
+          <div class="gallery">
+            <div class="tile"><div class="ph" aria-hidden="true"></div><div class="label">Kitchen remodel</div></div>
+            <div class="tile"><div class="ph" aria-hidden="true"></div><div class="label">Bathroom remodel</div></div>
+            <div class="tile"><div class="ph" aria-hidden="true"></div><div class="label">Basement finishing</div></div>
+            <div class="tile"><div class="ph" aria-hidden="true"></div><div class="label">Exterior upgrade</div></div>
+            <div class="tile"><div class="ph" aria-hidden="true"></div><div class="label">Drywall + paint</div></div>
+            <div class="tile"><div class="ph" aria-hidden="true"></div><div class="label">Flooring</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="panel" id="estimate">
+            <div class="panel-inner">
+              <div class="section-head" style="margin-bottom:10px">
+                <div>
+                  <h2 style="margin:0">Request a free in-person estimate</h2>
+                  <p style="margin:0">Tell us what you want to build — we’ll confirm a time by phone/text.</p>
+                </div>
+                <a class="btn ghost" data-phone-link href="tel:+18565550123">Call/Text <span data-phone-display>(856) 555-0123</span></a>
+              </div>
+              <form data-estimate-form>
+                <div class="formgrid">
+                  <div class="field">
+                    <label for="name">Name*</label>
+                    <input id="name" name="name" autocomplete="name" placeholder="Your name" required />
+                  </div>
+                  <div class="field">
+                    <label for="phone">Phone*</label>
+                    <input id="phone" name="phone" autocomplete="tel" placeholder="(856) 555-0123" required />
+                  </div>
+                  <div class="field">
+                    <label for="email">Email (optional)</label>
+                    <input id="email" name="email" autocomplete="email" placeholder="you@email.com" />
+                  </div>
+                  <div class="field">
+                    <label for="zip">ZIP*</label>
+                    <input id="zip" name="zip" inputmode="numeric" placeholder="080xx" required />
+                  </div>
+                  <div class="field" style="grid-column:1 / -1">
+                    <label for="projectType">Project type*</label>
+                    <select id="projectType" name="projectType" required>
+                      <option value="">Select one…</option>
+                      <option>Kitchen remodel</option>
+                      <option>Bathroom remodel</option>
+                      <option>Basement finishing</option>
+                      <option>Addition / framing</option>
+                      <option>Flooring / paint / drywall</option>
+                      <option>Exterior (deck/siding/doors)</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="field" style="grid-column:1 / -1">
+                    <label for="contactPref">Preferred contact</label>
+                    <select id="contactPref" name="contactPref">
+                      <option>Text</option>
+                      <option>Phone call</option>
+                      <option>Either</option>
+                    </select>
+                  </div>
+                  <div class="field" style="grid-column:1 / -1">
+                    <label for="details">Details (optional)</label>
+                    <textarea id="details" name="details" placeholder="Share the scope and timeline…"></textarea>
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <button class="btn primary" type="submit">Open email draft</button>
+                  <div class="fineprint">No spam. Just scheduling your estimate.</div>
+                </div>
+                <div class="success" data-form-success role="status"></div>
+                <div class="error" data-form-error role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-footer></div>
+  </body>
+</html>
+

@@ -1,0 +1,59 @@
+{
+  "businessName": "Up and Down Construction & Demolition",
+  "tagline": "South Jersey remodeling done right.",
+  "primaryCta": "Request a free in-person estimate",
+  "serviceArea": {
+    "region": "South Jersey",
+    "counties": ["Camden County", "Gloucester County", "Burlington County"],
+    "towns": ["Cherry Hill", "Haddonfield", "Voorhees", "Marlton", "Washington Township"]
+  },
+  "contact": {
+    "phoneDisplay": "(856) 555-0123",
+    "phoneE164": "+18565550123",
+    "smsE164": "+18565550123",
+    "email": "hello@upanddownconstruction.com"
+  },
+  "claims": {
+    "licensed": false,
+    "insured": false,
+    "warranty": "Ask about workmanship warranty."
+  },
+  "services": [
+    {
+      "title": "Kitchen Remodeling",
+      "summary": "Design-forward kitchens built for everyday use."
+    },
+    {
+      "title": "Bathroom Remodeling",
+      "summary": "Tile, vanities, showers, and full bath transformations."
+    },
+    {
+      "title": "Basement Finishing",
+      "summary": "Comfortable, code-compliant living space down below."
+    },
+    {
+      "title": "Additions & Framing",
+      "summary": "Room additions, structural work, and framing projects."
+    },
+    {
+      "title": "Flooring, Paint & Drywall",
+      "summary": "Refreshes and repairs that make a big difference."
+    },
+    {
+      "title": "Exterior (Decks, Siding, Doors)",
+      "summary": "Curb appeal upgrades and weather-tight exteriors."
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Local Homeowner",
+      "location": "South Jersey",
+      "quote": "Great communication, clean work, and the timeline was exactly what they said."
+    },
+    {
+      "name": "Repeat Client",
+      "location": "Camden County",
+      "quote": "We’ve used them twice now — honest pricing and quality craftsmanship."
+    }
+  ]
+}
