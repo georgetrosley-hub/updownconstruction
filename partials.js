@@ -5,7 +5,7 @@ function headerHtml() {
     <div class="container">
       <div class="nav">
         <a class="brand" href="index.html" aria-label="Home">
-          <img data-logo-img="true" src="assets/logo.png" alt="Up and Down Construction logo" style="width:40px;height:40px;border-radius:12px;border:1px solid rgba(255,255,255,.10)" />
+          <img data-logo-img="true" src="assets/logo.png" alt="Up and Down Construction logo" style="width:40px;height:40px;border-radius:12px;border:1px solid rgba(0,0,0,.10)" />
           <div class="brand-mark" data-brand-mark style="display:none" aria-hidden="true"></div>
           <div class="brand-text">
             <b data-business-name>Up and Down Construction</b>
@@ -22,7 +22,7 @@ function headerHtml() {
         </nav>
 
         <div class="navctas">
-          <a class="btn ghost" data-phone-link href="tel:+18565550123">Call/Text <span data-phone-display>(856) 555-0123</span></a>
+          <a class="btn" data-phone-link href="tel:+18565550123">Call/Text <span data-phone-display>(856) 555-0123</span></a>
           <a class="btn primary" data-scroll-to="estimate" href="#estimate">Free Estimate</a>
           <div class="hamburger">
             <button type="button" data-menu-btn aria-expanded="false" aria-controls="mobilemenu" aria-label="Open menu">Menu</button>

@@ -1,6 +1,6 @@
 {
   "businessName": "Up and Down Construction & Demolition",
-  "tagline": "South Jersey remodeling done right.",
+  "tagline": "Premium exterior improvements for South Jersey homeowners.",
   "primaryCta": "Request a free in-person estimate",
   "serviceArea": {
     "region": "South Jersey",
@@ -20,28 +20,28 @@
   },
   "services": [
     {
-      "title": "Kitchen Remodeling",
-      "summary": "Design-forward kitchens built for everyday use."
+      "title": "Pavers",
+      "summary": "Driveways, walkways, patios — clean lines, tight finish."
     },
     {
-      "title": "Bathroom Remodeling",
-      "summary": "Tile, vanities, showers, and full bath transformations."
+      "title": "Hardscaping",
+      "summary": "Retaining walls, edging, steps, and outdoor structure work."
     },
     {
-      "title": "Basement Finishing",
-      "summary": "Comfortable, code-compliant living space down below."
+      "title": "Drainage",
+      "summary": "Downspout routing, French drains, and water control solutions."
     },
     {
-      "title": "Additions & Framing",
-      "summary": "Room additions, structural work, and framing projects."
+      "title": "Grading",
+      "summary": "Fix low spots and improve runoff with proper slope and prep."
     },
     {
-      "title": "Flooring, Paint & Drywall",
-      "summary": "Refreshes and repairs that make a big difference."
+      "title": "Mulch & Bed Refresh",
+      "summary": "Crisp edges, clean beds, and fresh mulch installed right."
     },
     {
-      "title": "Exterior (Decks, Siding, Doors)",
-      "summary": "Curb appeal upgrades and weather-tight exteriors."
+      "title": "Outdoor Projects",
+      "summary": "General exterior improvements — tell us what you’re planning."
     }
   ],
   "reviews": [
