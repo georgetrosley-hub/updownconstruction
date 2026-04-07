@@ -5,7 +5,7 @@ function headerHtml() {
     <div class="container">
       <div class="nav">
         <a class="brand" href="index.html" aria-label="Home">
-          <img data-logo-img="true" src="assets/logo.png" alt="Up and Down Construction logo" style="width:40px;height:40px;border-radius:12px;border:1px solid rgba(0,0,0,.10)" />
+          <img class="brand-logo" data-logo-img="true" src="assets/logo.png" alt="Up and Down Construction &amp; Demolition logo" width="88" height="192" decoding="async" />
           <div class="brand-mark" data-brand-mark style="display:none" aria-hidden="true"></div>
           <div class="brand-text">
             <b data-business-name>Up and Down Construction</b>
@@ -54,7 +54,7 @@ function footerHtml() {
       <div class="footer__top">
         <div class="footer__brand">
           <div class="footer__brandrow">
-            <div class="brand-mark footer__mark" aria-hidden="true"></div>
+            <img class="footer__logo" src="assets/logo.png" alt="" width="88" height="192" decoding="async" />
             <div>
               <div class="footer__name" data-business-name>Up and Down Construction &amp; Demolition</div>
               <p class="footer__tagline" data-tagline>Pavers, hardscape, and drainage for South Jersey—quoted in writing.</p>

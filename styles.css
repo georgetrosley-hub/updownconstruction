@@ -130,6 +130,14 @@ img{max-width:100%;display:block}
   transition: background var(--duration) var(--ease-out);
 }
 .brand:hover{background:rgba(0,0,0,.025)}
+.brand-logo{
+  display:block;
+  height:44px;
+  width:auto;
+  max-width:min(100px, 22vw);
+  object-fit:contain;
+  flex-shrink:0;
+}
 .brand-mark{
   width:40px;height:40px;border-radius:12px;
   background: radial-gradient(16px 16px at 30% 30%, rgba(255,255,255,.35), rgba(255,255,255,0)),
@@ -992,8 +1000,12 @@ img{max-width:100%;display:block}
   gap:14px;
   align-items:flex-start;
 }
-.footer__mark.brand-mark{
-  width:36px;height:36px;border-radius:11px;
+.footer__logo{
+  display:block;
+  height:52px;
+  width:auto;
+  max-width:100px;
+  object-fit:contain;
   flex-shrink:0;
 }
 .footer__name{

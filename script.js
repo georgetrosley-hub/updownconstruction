@@ -257,12 +257,12 @@ function wireEstimateButtons() {
 }
 
 function applyLogoFallback() {
-  const img = document.querySelector('[data-logo-img="true"]');
-  if (!img) return;
-  img.addEventListener("error", () => {
-    img.style.display = "none";
-    const mark = document.querySelector("[data-brand-mark]");
-    if (mark) mark.style.display = "grid";
+  document.querySelectorAll('[data-logo-img="true"]').forEach((img) => {
+    img.addEventListener("error", () => {
+      img.style.display = "none";
+      const mark = document.querySelector("[data-brand-mark]");
+      if (mark) mark.style.display = "grid";
+    });
   });
 }
 
