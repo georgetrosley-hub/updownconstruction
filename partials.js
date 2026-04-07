@@ -9,21 +9,21 @@ function headerHtml() {
           <div class="brand-mark" data-brand-mark style="display:none" aria-hidden="true"></div>
           <div class="brand-text">
             <b data-business-name>Up and Down Construction</b>
-            <span data-service-area-summary>South Jersey • Free in-person estimate</span>
+            <span class="brand-text__line" data-nav-region>South Jersey</span>
           </div>
         </a>
 
         <nav class="navlinks" aria-label="Primary">
+          <a data-nav href="index.html">Home</a>
           <a data-nav href="services.html">Services</a>
           <a data-nav href="projects.html">Projects</a>
           <a data-nav href="about.html">About</a>
-          <a data-nav href="reviews.html">Reviews</a>
           <a data-nav href="contact.html">Contact</a>
         </nav>
 
         <div class="navctas">
-          <a class="btn" data-phone-link href="tel:+18565550123">Call/Text <span data-phone-display>(856) 555-0123</span></a>
-          <a class="btn primary" data-scroll-to="estimate" href="#estimate">Free Estimate</a>
+          <a class="nav-phone" data-phone-link href="tel:+18565550123"><span data-phone-display>(856) 555-0123</span></a>
+          <a class="btn primary nav-cta" data-scroll-to="estimate" href="index.html#estimate">Get Free Estimate</a>
           <div class="hamburger">
             <button type="button" data-menu-btn aria-expanded="false" aria-controls="mobilemenu" aria-label="Open menu">Menu</button>
           </div>
@@ -34,13 +34,13 @@ function headerHtml() {
     <div class="mobilemenu" id="mobilemenu" data-mobilemenu data-open="false">
       <div class="container">
         <div class="inner">
-          <a href="services.html">Services</a>
-          <a href="projects.html">Projects</a>
-          <a href="about.html">About</a>
-          <a href="reviews.html">Reviews</a>
-          <a href="contact.html">Contact</a>
-          <a class="btn primary" style="justify-content:center" data-scroll-to="estimate" href="#estimate">Request Free In‑Person Estimate</a>
-          <a class="btn" style="justify-content:center" data-phone-link href="tel:+18565550123">Call/Text <span data-phone-display>(856) 555-0123</span></a>
+          <a data-nav href="index.html">Home</a>
+          <a data-nav href="services.html">Services</a>
+          <a data-nav href="projects.html">Projects</a>
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="contact.html">Contact</a>
+          <a class="btn primary mobilemenu__cta" data-scroll-to="estimate" href="index.html#estimate">Get Free Estimate</a>
+          <a class="mobilemenu__phone" data-phone-link href="tel:+18565550123"><span data-phone-display>(856) 555-0123</span></a>
         </div>
       </div>
     </div>
@@ -49,38 +49,49 @@ function headerHtml() {
 
 function footerHtml() {
   return `
-  <footer class="footer">
+  <footer class="footer footer--premium">
     <div class="container">
-      <div class="footergrid">
-        <div>
-          <div style="display:flex;gap:12px;align-items:center">
-            <div class="brand-mark" aria-hidden="true"></div>
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__brandrow">
+            <div class="brand-mark footer__mark" aria-hidden="true"></div>
             <div>
-              <div style="font-weight:700" data-business-name>Up and Down Construction & Demolition</div>
-              <div class="small">Residential remodeling in South Jersey. Free in-person estimates.</div>
+              <div class="footer__name" data-business-name>Up and Down Construction &amp; Demolition</div>
+              <p class="footer__tagline" data-tagline>Premium exterior improvements for South Jersey homeowners.</p>
             </div>
           </div>
-          <div class="small" style="margin-top:12px">
-            Call/Text: <a data-phone-link href="tel:+18565550123"><span data-phone-display>(856) 555-0123</span></a><br/>
-            Email: <a data-email-link href="mailto:hello@upanddownconstruction.com"><span data-email-display>hello@upanddownconstruction.com</span></a>
-          </div>
+          <p class="footer__areas" data-footer-service-area>South Jersey: Camden, Gloucester, Burlington Counties</p>
+          <p class="footer__trust">Licensed &amp; insured · Professional workmanship · Local crew</p>
         </div>
 
-        <div class="footlinks" aria-label="Footer links">
-          <a href="services.html">Services</a>
-          <a href="projects.html">Projects</a>
-          <a href="about.html">About</a>
-          <a href="reviews.html">Reviews</a>
-          <a href="contact.html">Contact</a>
+        <div class="footer__contact">
+          <div class="footer__contact-title">Contact</div>
+          <a class="footer__contact-line" data-phone-link href="tel:+18565550123">
+            <span class="footer__contact-label">Phone</span>
+            <span data-phone-display>(856) 555-0123</span>
+          </a>
+          <a class="footer__contact-line" data-email-link href="mailto:hello@upanddownconstruction.com">
+            <span class="footer__contact-label">Email</span>
+            <span data-email-display>hello@upanddownconstruction.com</span>
+          </a>
         </div>
+      </div>
 
-        <div class="footlinks" aria-label="Legal">
+      <nav class="footer__quick" aria-label="Quick links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="footer__bottom">
+        <div class="footer__legal">
           <a href="privacy.html">Privacy</a>
           <a href="terms.html">Terms</a>
-          <div class="small">
-            © <span data-year></span> <span data-business-name>Up and Down Construction</span>.
-          </div>
         </div>
+        <p class="footer__copy">© <span data-year></span> <span data-business-name>Up and Down Construction</span></p>
       </div>
     </div>
   </footer>`;

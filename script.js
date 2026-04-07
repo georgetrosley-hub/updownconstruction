@@ -33,6 +33,13 @@ function formatServiceArea(area) {
   return counties ? `${area.region} • ${counties}` : area?.region || "";
 }
 
+function formatFooterServiceArea(area) {
+  const counties = (area?.counties || []).filter(Boolean);
+  const region = area?.region || "South Jersey";
+  if (!counties.length) return `${region}.`;
+  return `${region}: ${counties.join(", ")}.`;
+}
+
 function fillNavCurrentPage() {
   const path = location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll("[data-nav]").forEach((a) => {
@@ -273,6 +280,8 @@ async function init() {
     setMultipleText("[data-business-name]", site.businessName || "");
     setText("[data-tagline]", site.tagline || "");
     setText("[data-service-area-summary]", formatServiceArea(site.serviceArea || {}));
+    setText("[data-footer-service-area]", formatFooterServiceArea(site.serviceArea || {}));
+    setText("[data-nav-region]", site.serviceArea?.region || "South Jersey");
 
     const tel = e164ToTel(site?.contact?.phoneE164 || "");
     const sms = e164ToSms(site?.contact?.smsE164 || site?.contact?.phoneE164 || "");
