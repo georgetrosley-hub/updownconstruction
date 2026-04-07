@@ -1,6 +1,6 @@
 {
   "businessName": "Up and Down Construction & Demolition",
-  "tagline": "Premium exterior improvements for South Jersey homeowners.",
+  "tagline": "Pavers, hardscape, and drainage for South Jersey—quoted in writing.",
   "primaryCta": "Request a free in-person estimate",
   "serviceArea": {
     "region": "South Jersey",
@@ -21,34 +21,34 @@
   "services": [
     {
       "title": "Pavers",
-      "summary": "Paver patios and walkways that stay level, tight, and clean-looking."
+      "summary": "Patios and walks: graded base, tight joints, edges that stay put."
     },
     {
       "title": "Hardscaping",
-      "summary": "Retaining walls and edges built to hold, drain, and look sharp."
+      "summary": "Walls, steps, and borders—engineered for load and drainage, not just looks."
     },
     {
       "title": "Drainage",
-      "summary": "Water control that protects your foundation, yard, and hardscape."
+      "summary": "Swales, pipe, and downspout routing—water away from the house and hardscape."
     },
     {
       "title": "Grading",
-      "summary": "Proper grading that moves water away and prevents pooling."
+      "summary": "Pitch and finish grade so water sheds where it should."
     },
     {
       "title": "Mulch & Bed Refresh",
-      "summary": "Clean bed lines and fresh mulch that make your exterior look finished."
+      "summary": "Crisp edges, weed barrier where it helps, fresh mulch."
     },
     {
       "title": "Outdoor Projects",
-      "summary": "Exterior upgrades scoped clearly and built to last."
+      "summary": "Other exterior work—scoped in writing before we start."
     }
   ],
   "featuredProjects": [
     {
       "title": "Paver Patio Refresh",
       "town": "Cherry Hill, NJ",
-      "summary": "New paver patio with proper base prep and clean edge restraints for long-term stability.",
+      "summary": "New patio: compacted base, edge restraints, pitch away from the foundation.",
       "images": {
         "cover": "assets/projects/patio-cover.jpg",
         "before": "assets/projects/patio-before.jpg",
@@ -58,7 +58,7 @@
     {
       "title": "Drainage & Downspout Routing",
       "town": "Voorhees, NJ",
-      "summary": "Water redirected away from the foundation with improved grading and drainage routing.",
+      "summary": "Grading and pipe routing—downspouts and surface water away from the house.",
       "images": {
         "cover": "assets/projects/drainage-cover.jpg",
         "before": "assets/projects/drainage-before.jpg",
@@ -68,7 +68,7 @@
     {
       "title": "Hardscape Border & Bed Cleanup",
       "town": "Washington Township, NJ",
-      "summary": "Crisp borders, refreshed beds, and a finished look that holds up season after season.",
+      "summary": "New border stone, bed cleanup, mulch—edges that stay sharp.",
       "images": {
         "cover": "assets/projects/border-cover.jpg",
         "before": "assets/projects/border-before.jpg",
@@ -80,12 +80,12 @@
     {
       "name": "Local Homeowner",
       "location": "South Jersey",
-      "quote": "Great communication, clean work, and the timeline was exactly what they said."
+      "quote": "They answered the phone, showed up on schedule, and the scope matched the bid."
     },
     {
       "name": "Repeat Client",
       "location": "Camden County",
-      "quote": "We’ve used them twice now — honest pricing and quality craftsmanship."
+      "quote": "Second job with them—straight numbers, clean site, work that matches what they described."
     }
   ]
 }

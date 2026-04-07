@@ -67,10 +67,7 @@ function buildServicesCards(services) {
     const div = document.createElement("div");
     div.className = "card card--premium card--service";
     div.innerHTML = `
-      <div class="service-card__head">
-        <h3>${escapeHtml(s.title || "")}</h3>
-        <div class="service-card__badge">Built for durability</div>
-      </div>
+      <h3>${escapeHtml(s.title || "")}</h3>
       <p class="service-card__desc">${escapeHtml(s.summary || "")}</p>
     `;
     root.appendChild(div);

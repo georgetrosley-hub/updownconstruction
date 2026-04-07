@@ -57,11 +57,11 @@ function footerHtml() {
             <div class="brand-mark footer__mark" aria-hidden="true"></div>
             <div>
               <div class="footer__name" data-business-name>Up and Down Construction &amp; Demolition</div>
-              <p class="footer__tagline" data-tagline>Premium exterior improvements for South Jersey homeowners.</p>
+              <p class="footer__tagline" data-tagline>Pavers, hardscape, and drainage for South Jersey—quoted in writing.</p>
             </div>
           </div>
           <p class="footer__areas" data-footer-service-area>South Jersey: Camden, Gloucester, Burlington Counties</p>
-          <p class="footer__trust">Licensed &amp; insured · Professional workmanship · Local crew</p>
+          <p class="footer__trust">Licensed &amp; insured · Written scope · Local crew</p>
         </div>
 
         <div class="footer__contact">
