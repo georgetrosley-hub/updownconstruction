@@ -1222,8 +1222,11 @@ img{max-width:100%;display:block}
 @media (min-width: 981px){
   .hero--home{padding:48px 0 40px}
 }
-.eyebrow--home{
-  margin:0 0 8px;
+.hero--home .h1--home{
+  max-width:none;
+}
+.hero__line{
+  display:block;
 }
 .h1--home{
   font-size:clamp(28px, 7.2vw, 44px);
@@ -1234,6 +1237,9 @@ img{max-width:100%;display:block}
 }
 @media (min-width: 640px){
   .h1--home{max-width:22ch}
+}
+.hero--home .lead--home{
+  max-width:40ch;
 }
 .lead--home{
   margin:0;
