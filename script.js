@@ -62,8 +62,11 @@ function wireMobileMenu() {
 function buildServicesCards(services) {
   const root = document.querySelector("[data-services]");
   if (!root) return;
+  const maxAttr = root.getAttribute("data-services-max");
+  const max = maxAttr ? parseInt(maxAttr, 10) : NaN;
+  const list = Number.isFinite(max) && max > 0 ? (services || []).slice(0, max) : services || [];
   root.innerHTML = "";
-  (services || []).forEach((s) => {
+  list.forEach((s) => {
     const div = document.createElement("div");
     div.className = "card card--premium card--service";
     div.innerHTML = `
@@ -89,10 +92,25 @@ function buildTestimonials(reviews) {
   });
 }
 
-function projectImageMarkup(images) {
+function projectImageMarkup(images, opts) {
   const cover = images?.cover;
   const before = images?.before;
   const after = images?.after;
+
+  if (opts?.preferBa && before && after) {
+    return `
+      <div class="project-media project-media--ba">
+        <div class="project-ba">
+          <div class="project-ba__label">Before</div>
+          <img class="project-img" src="${escapeHtml(before)}" alt="" loading="lazy" />
+        </div>
+        <div class="project-ba">
+          <div class="project-ba__label">After</div>
+          <img class="project-img" src="${escapeHtml(after)}" alt="" loading="lazy" />
+        </div>
+      </div>
+    `;
+  }
 
   // Structure supports before/after later. If cover is present, use it.
   if (cover) {
@@ -137,7 +155,7 @@ function buildFeaturedProjects(projects) {
     a.setAttribute("aria-label", `${p.title || "Project"} — view projects`);
 
     a.innerHTML = `
-      ${projectImageMarkup(p.images)}
+      ${projectImageMarkup(p.images, null)}
       <div class="project-body">
         <div class="project-title">${escapeHtml(p.title || "")}</div>
         <div class="project-meta">${escapeHtml(p.town || "")}</div>
@@ -147,6 +165,47 @@ function buildFeaturedProjects(projects) {
 
     root.appendChild(a);
   });
+}
+
+function buildBeforeAfterPreview(projects) {
+  const root = document.querySelector("[data-ba-preview]");
+  if (!root) return;
+  const list = projects || [];
+  const withBa = list.find((p) => p.images?.before && p.images?.after);
+  const p = withBa || list[0];
+  root.innerHTML = "";
+
+  const wrap = document.createElement("div");
+  wrap.className = "ba-preview__inner";
+
+  if (!p) {
+    wrap.innerHTML = `
+      <a class="project-card ba-preview__card" href="projects.html">
+        ${projectImageMarkup({}, null)}
+        <div class="project-body project-body--compact">
+          <div class="project-title">See our work</div>
+          <div class="project-meta">Before &amp; after on the projects page</div>
+        </div>
+      </a>
+    `;
+    root.appendChild(wrap);
+    return;
+  }
+
+  const a = document.createElement("a");
+  a.className = "project-card ba-preview__card";
+  a.href = "projects.html";
+  a.setAttribute("aria-label", `${p.title || "Project"} — before and after, view projects`);
+  const useBa = Boolean(p.images?.before && p.images?.after);
+  a.innerHTML = `
+    ${projectImageMarkup(p.images, useBa ? { preferBa: true } : null)}
+    <div class="project-body project-body--compact">
+      <div class="project-title">${escapeHtml(p.title || "")}</div>
+      <div class="project-meta">${escapeHtml(p.town || "")}</div>
+    </div>
+  `;
+  wrap.appendChild(a);
+  root.appendChild(wrap);
 }
 
 function buildServiceAreaList(area) {
@@ -291,6 +350,7 @@ async function init() {
 
     buildServicesCards(site.services || []);
     buildFeaturedProjects(site.featuredProjects || []);
+    buildBeforeAfterPreview(site.featuredProjects || []);
     buildTestimonials(site.reviews || []);
     buildServiceAreaList(site.serviceArea || {});
     injectJsonLd(site);

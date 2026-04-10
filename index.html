@@ -19,277 +19,97 @@
   <body>
     <div data-header></div>
 
-    <main id="main">
-      <!-- 1) Hero -->
-      <section class="hero hero--premium">
+    <main id="main" class="main--home">
+      <!-- 2) Hero -->
+      <section class="hero hero--home" aria-label="Introduction">
         <div class="container">
-          <div class="hero-grid hero-grid--premium">
-            <div class="hero-premium">
-              <div class="eyebrow">South Jersey · Interior demolition &amp; residential property services</div>
-              <h1 class="h1 h1--premium">Interior demo, cleanouts, and renovation prep—done clean, done on scope.</h1>
-              <p class="lead lead--premium">
-                Kitchens, bathrooms, basements, garages, junk removal, and property maintenance for homeowners, landlords, investors, and property managers. Controlled tear-out, full load-out, and a site that's ready for the next trade—or the next tenant.
-              </p>
-
-              <div class="hero-ctas">
-                <a class="btn primary" data-scroll-to="estimate" href="#estimate">Get Free Estimate</a>
-                <a class="btn btn--text" data-phone-link href="tel:+18565550123">Call <span data-phone-display>(856) 555-0123</span></a>
-              </div>
-
-              <div class="hero-trust" aria-label="Trust indicators">
-                <div class="trustchip">Licensed &amp; insured</div>
-                <div class="trustchip">Written scope · debris handled</div>
-                <div class="trustchip">Homes, rentals &amp; investment properties</div>
-              </div>
-            </div>
-
-            <div class="hero-visual" aria-hidden="true">
-              <div class="hero-visual__frame">
-                <div class="hero-visual__tile hero-visual__tile--lg">
-                  <div class="hero-visual__ph"></div>
-                  <div class="hero-visual__label">Demo, cleanouts &amp; prep</div>
-                </div>
-                <div class="hero-visual__row">
-                  <div class="hero-visual__tile">
-                    <div class="hero-visual__ph hero-visual__ph--alt"></div>
-                    <div class="hero-visual__label">Kitchens &amp; baths</div>
-                  </div>
-                  <div class="hero-visual__tile">
-                    <div class="hero-visual__ph hero-visual__ph--alt2"></div>
-                    <div class="hero-visual__label">Basements · Garages · Junk out</div>
-                  </div>
-                </div>
-              </div>
-              <div class="hero-visual__note">Your project photography</div>
-            </div>
+          <p class="eyebrow eyebrow--home"><span data-nav-region>South Jersey</span> · Written quotes</p>
+          <h1 class="h1 h1--home">Pavers, hardscape &amp; drainage—quoted in writing.</h1>
+          <p class="lead lead--home">Free site visit. Local crew. Work scoped before we start.</p>
+          <div class="hero-ctas hero-ctas--stack">
+            <a class="btn primary btn--touch" data-scroll-to="estimate" href="#estimate">Get free estimate</a>
+            <a class="btn btn--touch" data-phone-link href="tel:+18565550123">Call <span data-phone-display>(856) 555-0123</span></a>
           </div>
         </div>
       </section>
 
-      <!-- 2) Trust / credibility strip -->
-      <section class="trust-strip" aria-label="Trust and credibility">
+      <!-- 3) Services -->
+      <section class="section section--home section--divider" aria-labelledby="svc-heading">
         <div class="container">
-          <div class="trust-strip__inner">
-            <div class="trust-item"><span class="trust-label">Site visit</span><span class="trust-sub">Written scope.</span></div>
-            <div class="trust-item"><span class="trust-label">South Jersey</span><span class="trust-sub">Local crew.</span></div>
-            <div class="trust-item"><span class="trust-label">Drainage &amp; base</span><span class="trust-sub">Before finishes.</span></div>
-            <div class="trust-item"><span class="trust-label">Call or text</span><span class="trust-sub">We call back.</span></div>
+          <div class="section-head section-head--home">
+            <h2 id="svc-heading">What we do</h2>
+            <a class="btn btn--text btn--text--home" href="services.html">All services</a>
           </div>
+          <div class="services-grid--home" data-services data-services-max="6" aria-label="Core services"></div>
         </div>
       </section>
 
-      <!-- 3) Services grid -->
-      <section class="section section--tight section--divider">
+      <!-- 4) Trust strip -->
+      <section class="trust-strip trust-strip--home" aria-label="Why homeowners choose us">
         <div class="container">
-          <div class="section-head section-head--premium">
-            <div>
-              <h2>Services</h2>
-              <p>
-                Interior demo, cleanouts, and renovation prep for South Jersey homes and rentals—scoped in writing before we swing a hammer.
-                Homeowners, landlords, investors, and property managers use us when the job needs a controlled tear-out, full load-out, and a site that's ready for what's next.
-              </p>
-            </div>
-            <a class="btn btn--text" href="services.html">View all</a>
-          </div>
-          <div class="grid3 grid3--premium services-grid" aria-label="Core services">
-            <div class="card card--premium card--service">
-              <h3>Kitchen demo &amp; renovation prep</h3>
-              <p class="service-card__desc">Cabinets, counters, and fixtures out—flooring and walls demo'd to your plan.</p>
-              <p class="service-card__desc">We protect what stays and leave the space broom-clean for your remodel crew.</p>
-              <a class="btn btn--text service-card__cta" href="services.html">Learn more</a>
-            </div>
-            <div class="card card--premium card--service">
-              <h3>Bathroom demo &amp; renovation prep</h3>
-              <p class="service-card__desc">Vanity, surround, and tub/shower demo with dust and traffic controlled.</p>
-              <p class="service-card__desc">Debris hauled so plumbing and tile get a clear, ready room.</p>
-              <a class="btn btn--text service-card__cta" href="services.html">Learn more</a>
-            </div>
-            <div class="card card--premium card--service">
-              <h3>Basement cleanout &amp; demo</h3>
-              <p class="service-card__desc">Old finishes, built-ins, and years of stored stuff—sorted, removed, and hauled.</p>
-              <p class="service-card__desc">You get open square footage and a straight path to reframing or finishing.</p>
-              <a class="btn btn--text service-card__cta" href="services.html">Learn more</a>
-            </div>
-            <div class="card card--premium card--service">
-              <h3>Garage cleanout &amp; demo</h3>
-              <p class="service-card__desc">Clear the clutter, strip what's coming out, and reclaim usable bays.</p>
-              <p class="service-card__desc">Straightforward haul-off for homeowners, flips, and rental turnovers.</p>
-              <a class="btn btn--text service-card__cta" href="services.html">Learn more</a>
-            </div>
-            <div class="card card--premium card--service">
-              <h3>Interior demolition</h3>
-              <p class="service-card__desc">Selective demo through full gut—walls, ceilings, and flooring per your scope.</p>
-              <p class="service-card__desc">Neighbor-friendly pacing, debris contained, and a walkthrough at closeout.</p>
-              <a class="btn btn--text service-card__cta" href="services.html">Learn more</a>
-            </div>
-            <div class="card card--premium card--service">
-              <h3>Junk removal</h3>
-              <p class="service-card__desc">Furniture, construction debris, and cleanout piles—we load it and take it off-site.</p>
-              <p class="service-card__desc">One call when the dumpster isn't worth the hassle or the timeline's tight.</p>
-              <a class="btn btn--text service-card__cta" href="services.html">Learn more</a>
-            </div>
-            <div class="card card--premium card--service">
-              <h3>Property maintenance</h3>
-              <p class="service-card__desc">Small repairs and turnover prep landlords and managers actually schedule.</p>
-              <p class="service-card__desc">Honest timelines and local crews—you're not chasing a national call center.</p>
-              <a class="btn btn--text service-card__cta" href="services.html">Learn more</a>
-            </div>
-          </div>
+          <ul class="trust-list">
+            <li class="trust-list__item"><span class="trust-list__label">Written scope</span> Line-item quote you can compare.</li>
+            <li class="trust-list__item"><span class="trust-list__label">South Jersey</span> Local crew, counties we know.</li>
+            <li class="trust-list__item"><span class="trust-list__label">Drainage first</span> Pitch and base before finishes.</li>
+            <li class="trust-list__item"><span class="trust-list__label">Fast reply</span> Call or text—we call back.</li>
+          </ul>
         </div>
       </section>
 
-      <!-- 4) Featured projects -->
-      <section class="section section--divider">
+      <!-- 5) Before / after preview -->
+      <section class="section section--home section--divider" aria-labelledby="ba-heading">
         <div class="container">
-          <div class="section-head section-head--premium">
-            <div>
-              <h2>Selected projects</h2>
-              <p>Recent work in towns we serve.</p>
-            </div>
-            <a class="btn btn--text" href="projects.html">See projects</a>
+          <div class="section-head section-head--home">
+            <h2 id="ba-heading">Before &amp; after</h2>
+            <a class="btn btn--text btn--text--home" href="projects.html">More photos</a>
           </div>
-          <div class="projects-grid" aria-label="Project previews" data-featured-projects>
-            <!-- populated from site.json -->
-            <a class="project-card" href="projects.html" aria-label="Paver Patio Refresh — view projects">
-              <div class="project-media">
-                <div class="project-img project-img--ph" aria-hidden="true"></div>
-              </div>
-              <div class="project-body">
-                <div class="project-title">Paver Patio Refresh</div>
-                <div class="project-meta">Cherry Hill, NJ</div>
-                <div class="project-desc">New patio: compacted base, edge restraints, pitch away from the house.</div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- 5) Why choose us -->
-      <section class="section section--divider">
-        <div class="container">
-          <div class="section-head section-head--premium">
-            <div>
-              <h2>Why work with us</h2>
-              <p>A scope you can compare, a schedule you can plan around, a jobsite we leave clean.</p>
-            </div>
-          </div>
-          <div class="why-grid">
-            <div class="card card--premium why-card">
-              <div class="why-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M7 12.5l3 3 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h3>Real start dates</h3>
-              <p>We give you a window and stick to it—weather is the only reason we move it.</p>
-            </div>
-
-            <div class="card card--premium why-card">
-              <div class="why-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M7 8h10M7 12h6M7 16h8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <h3>You hear from us</h3>
-              <p>Calls and texts returned—before we start, while we’re on site, and at closeout.</p>
-            </div>
-
-            <div class="card card--premium why-card">
-              <div class="why-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M12 3l7 4v6c0 5-3 8-7 8s-7-3-7-8V7l7-4z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h3>Subgrade first</h3>
-              <p>Pitch, drainage, and base before anything you see on top.</p>
-            </div>
-
-            <div class="card card--premium why-card">
-              <div class="why-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M12 6v12M6 12h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                  <path d="M4.5 7.5C6.2 5 8.8 3.5 12 3.5s5.8 1.5 7.5 4M4.5 16.5c1.7 2.5 4.3 4 7.5 4s5.8-1.5 7.5-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <h3>Line-item scope</h3>
-              <p>Written line items—set it beside any other quote.</p>
-            </div>
-
-            <div class="card card--premium why-card">
-              <div class="why-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M7 20h10M9 20V9.5a3 3 0 1 1 6 0V20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h3>Clean handoff</h3>
-              <p>Daily pickup and a final walkthrough—you sign off when it’s done.</p>
-            </div>
-          </div>
+          <div data-ba-preview class="ba-preview"></div>
         </div>
       </section>
 
       <!-- 6) Process -->
-      <section class="section section--divider">
+      <section class="section section--home section--divider" aria-labelledby="steps-heading">
         <div class="container">
-          <div class="section-head section-head--premium">
-            <div>
-              <h2>How it works</h2>
-              <p>From first call to walkthrough—four steps.</p>
-            </div>
-          </div>
-          <div class="steps steps--premium">
-            <div class="step step--premium">
-              <div class="num num--premium">1</div>
-              <b>Reach out</b>
-              <span>Address, photos if you have them, and what’s failing or missing.</span>
-            </div>
-            <div class="step step--premium">
-              <div class="num num--premium">2</div>
-              <b>Site visit</b>
-              <span>We measure slope and drainage, then write scope—no loose verbal quotes.</span>
-            </div>
-            <div class="step step--premium">
-              <div class="num num--premium">3</div>
-              <b>Build</b>
-              <span>Prep, install, daily cleanup—same plan, same crew through the job.</span>
-            </div>
-            <div class="step step--premium">
-              <div class="num num--premium">4</div>
-              <b>Walkthrough</b>
-              <span>Drains, edges, and finishes—reviewed together before we close the job.</span>
-            </div>
-          </div>
+          <h2 id="steps-heading" class="section-title--home">How it works</h2>
+          <ol class="steps steps--home">
+            <li class="step step--home">
+              <span class="step--home__num">1</span>
+              <span class="step--home__title">Reach out</span>
+              <span class="step--home__text">Photos help. Tell us what’s failing or missing.</span>
+            </li>
+            <li class="step step--home">
+              <span class="step--home__num">2</span>
+              <span class="step--home__title">Site visit</span>
+              <span class="step--home__text">We measure slope, drainage, and scope—no vague numbers.</span>
+            </li>
+            <li class="step step--home">
+              <span class="step--home__num">3</span>
+              <span class="step--home__title">Build &amp; walkthrough</span>
+              <span class="step--home__text">Prep, install, cleanup—review together at closeout.</span>
+            </li>
+          </ol>
         </div>
       </section>
 
       <!-- 7) Final CTA -->
-      <section class="cta-final cta-final--premium" id="estimate" aria-label="Request a free estimate">
+      <section class="cta-final cta-final--premium cta-final--home" id="estimate" aria-label="Request a free estimate">
         <div class="container">
-          <div class="cta-final__inner">
+          <div class="cta-final__inner cta-final__inner--home">
             <div class="cta-final__copy">
-              <p class="cta-final__eyebrow">Interior demo &amp; cleanouts · South Jersey</p>
-              <h2 class="cta-final__headline">Request a free estimate for demo, cleanout, or prep.</h2>
-              <p class="cta-final__support">
-                Tell us the room or property. We'll walk it, scope tear-out and haul-off, and follow up by phone or text—usually the same business day.
-              </p>
-              <ul class="cta-final__trust" aria-label="Trust and professionalism">
-                <li>Licensed &amp; insured</li>
-                <li>Local crew · debris controlled</li>
-                <li>Same-day reply on business days</li>
-              </ul>
+              <p class="cta-final__eyebrow">Free in-person estimate</p>
+              <h2 class="cta-final__headline">Get on the schedule this week.</h2>
+              <p class="cta-final__support cta-final__support--short">Send your details—we’ll reply by phone or text, usually same business day.</p>
               <div class="cta-final__actions">
-                <a class="btn primary cta-final__primary" href="#estimate-form">Get Free Estimate</a>
-                <a class="btn cta-final__secondary" data-phone-link href="tel:+18565550123">Call Now <span class="cta-final__phone" data-phone-display>(856) 555-0123</span></a>
+                <a class="btn primary cta-final__primary btn--touch" href="#estimate-form">Start estimate</a>
+                <a class="btn cta-final__secondary btn--touch" data-phone-link href="tel:+18565550123"><span data-phone-display>(856) 555-0123</span></a>
               </div>
-              <p class="cta-final__fine">
-                Text: <a class="cta-final__link" data-sms-link href="sms:+18565550123">Message us</a><span class="cta-final__fine-dot" aria-hidden="true"> · </span>Same number.
-              </p>
+              <p class="cta-final__fine">Text <a class="cta-final__link" data-sms-link href="sms:+18565550123">same number</a>.</p>
             </div>
 
             <div class="panel panel--light cta-final__panel" id="estimate-form" aria-label="Estimate form">
               <div class="panel-inner">
                 <form data-estimate-form>
-                  <div class="formgrid">
+                  <div class="formgrid formgrid--home">
                     <div class="field">
                       <label for="name">Name*</label>
                       <input id="name" name="name" autocomplete="name" placeholder="Your name" required />
@@ -306,21 +126,20 @@
                       <label for="zip">ZIP*</label>
                       <input id="zip" name="zip" inputmode="numeric" placeholder="080xx" required />
                     </div>
-                    <div class="field" style="grid-column:1 / -1">
+                    <div class="field field--full">
                       <label for="projectType">Service*</label>
                       <select id="projectType" name="projectType" required>
                         <option value="">Select one…</option>
-                        <option>Kitchen demo</option>
-                        <option>Bathroom demo</option>
-                        <option>Basement cleanout / demo</option>
-                        <option>Garage cleanout / demo</option>
-                        <option>Interior demolition</option>
-                        <option>Junk removal</option>
-                        <option>Property maintenance</option>
+                        <option>Pavers</option>
+                        <option>Hardscaping</option>
+                        <option>Drainage</option>
+                        <option>Grading</option>
+                        <option>Mulch &amp; bed refresh</option>
+                        <option>Outdoor projects</option>
                         <option>Other</option>
                       </select>
                     </div>
-                    <div class="field" style="grid-column:1 / -1">
+                    <div class="field field--full">
                       <label for="contactPref">Preferred contact</label>
                       <select id="contactPref" name="contactPref">
                         <option>Text</option>
@@ -328,15 +147,14 @@
                         <option>Either</option>
                       </select>
                     </div>
-                    <div class="field" style="grid-column:1 / -1">
+                    <div class="field field--full">
                       <label for="details">Details (optional)</label>
-                      <textarea id="details" name="details" placeholder="Rooms, approx. size, what's coming out, ideal timing…"></textarea>
+                      <textarea id="details" name="details" placeholder="Rough size, photos, timing…"></textarea>
                     </div>
                   </div>
 
-                  <div class="form-actions">
-                    <button class="btn primary" type="submit">Get Free Estimate</button>
-                    <div class="fineprint">We use this only to schedule your visit and reply with next steps.</div>
+                  <div class="form-actions form-actions--home">
+                    <button class="btn primary btn--touch btn--submit-home" type="submit">Email my request</button>
                   </div>
                   <div class="success" data-form-success role="status"></div>
                   <div class="error" data-form-error role="alert"></div>
@@ -351,4 +169,3 @@
     <div data-footer></div>
   </body>
 </html>
-
