@@ -1367,7 +1367,7 @@ img{max-width:100%;display:block}
 }
 .lead--home{
   margin:0;
-  font-size:15px;
+  font-size:13px;
   line-height:1.4;
   color:rgba(11,11,14,.62);
   max-width:36ch;
@@ -1672,7 +1672,7 @@ img{max-width:100%;display:block}
     line-height:1.1;
   }
   .lead--home{
-    font-size:16px;
+    font-size:14px;
     line-height:1.5;
     max-width:100%;
   }
