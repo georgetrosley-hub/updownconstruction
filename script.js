@@ -209,7 +209,7 @@ function wireEstimateForm(site) {
 
     if (!name || !phone || !zip || !type) {
       if (error) {
-        error.textContent = "Please fill in Name, Phone, ZIP, and Project Type.";
+        error.textContent = "Please fill in Name, Phone, ZIP, and Service.";
         error.style.display = "block";
       }
       return;
@@ -221,7 +221,7 @@ function wireEstimateForm(site) {
       `Name: ${name}\n` +
         `Phone: ${phone}\n` +
         `ZIP: ${zip}\n` +
-        `Project type: ${type}\n` +
+        `Service: ${type}\n` +
         `Preferred contact: ${contactPref || "Either"}\n\n` +
         `Details:\n${desc || "(none)"}\n`
     );
@@ -236,7 +236,7 @@ function wireEstimateForm(site) {
 
     window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
     if (success) {
-      success.textContent = "Email draft opened. Send it to request your free in-person estimate.";
+      success.textContent = "Email draft opened. Send it to request your free estimate.";
       success.style.display = "block";
     }
     form.reset();
