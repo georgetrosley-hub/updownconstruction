@@ -16,6 +16,11 @@ function setHref(sel, value) {
   el.setAttribute("href", value);
 }
 
+function setHrefAll(selector, value) {
+  if (!value) return;
+  document.querySelectorAll(selector).forEach((el) => el.setAttribute("href", value));
+}
+
 function setMultipleText(selector, value) {
   document.querySelectorAll(selector).forEach((el) => (el.textContent = value));
 }
@@ -343,10 +348,10 @@ async function init() {
     const sms = e164ToSms(site?.contact?.smsE164 || site?.contact?.phoneE164 || "");
 
     setMultipleText("[data-phone-display]", site?.contact?.phoneDisplay || "");
-    setHref("[data-phone-link]", tel);
-    setHref("[data-sms-link]", sms);
+    setHrefAll("[data-phone-link]", tel);
+    setHrefAll("[data-sms-link]", sms);
     setMultipleText("[data-email-display]", site?.contact?.email || "");
-    setHref("[data-email-link]", `mailto:${site?.contact?.email || ""}`);
+    setHrefAll("[data-email-link]", `mailto:${site?.contact?.email || ""}`);
 
     buildServicesCards(site.services || []);
     buildFeaturedProjects(site.featuredProjects || []);

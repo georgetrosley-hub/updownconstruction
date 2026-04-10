@@ -22,7 +22,7 @@ function headerHtml() {
         </nav>
 
         <div class="navctas">
-          <a class="nav-phone" data-phone-link href="tel:+18565550123"><span data-phone-display>(856) 555-0123</span></a>
+          <a class="nav-phone" data-phone-link href="tel:+18565550123" title="Call us"><span data-phone-display>(856) 555-0123</span></a>
           <a class="btn primary nav-cta" data-scroll-to="estimate" href="index.html#estimate">Get Free Estimate</a>
           <div class="hamburger">
             <button type="button" data-menu-btn aria-expanded="false" aria-controls="mobilemenu" aria-label="Open menu">Menu</button>
@@ -40,9 +40,19 @@ function headerHtml() {
           <a data-nav href="about.html">About</a>
           <a data-nav href="contact.html">Contact</a>
           <a class="btn primary mobilemenu__cta" data-scroll-to="estimate" href="index.html#estimate">Get Free Estimate</a>
-          <a class="mobilemenu__phone" data-phone-link href="tel:+18565550123"><span data-phone-display>(856) 555-0123</span></a>
+          <a class="mobilemenu__phone" data-phone-link href="tel:+18565550123" title="Call us"><span data-phone-display>(856) 555-0123</span></a>
         </div>
       </div>
+    </div>
+  </div>`;
+}
+
+function mobileCtaBarHtml() {
+  return `
+  <div class="mobile-cta-bar" data-mobile-cta-bar role="region" aria-label="Quick contact">
+    <div class="container mobile-cta-bar__inner">
+      <a class="mobile-cta-bar__btn mobile-cta-bar__btn--call" data-phone-link href="tel:+18565550123">Call Now</a>
+      <a class="mobile-cta-bar__btn mobile-cta-bar__btn--estimate btn primary" data-scroll-to="estimate" href="index.html#estimate">Get Estimate</a>
     </div>
   </div>`;
 }
@@ -102,6 +112,12 @@ function mountPartials() {
   const footer = document.querySelector("[data-footer]");
   if (header) header.innerHTML = headerHtml();
   if (footer) footer.innerHTML = footerHtml();
+  if (!document.querySelector("[data-mobile-cta-bar]")) {
+    const wrap = document.createElement("div");
+    wrap.innerHTML = mobileCtaBarHtml().trim();
+    const bar = wrap.firstElementChild;
+    if (bar) document.body.appendChild(bar);
+  }
   const year = document.querySelector("[data-year]");
   if (year) year.textContent = String(new Date().getFullYear());
 }
