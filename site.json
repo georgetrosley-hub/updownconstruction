@@ -46,6 +46,15 @@
   ],
   "featuredProjects": [
     {
+      "title": "Bathroom remodel",
+      "town": "Mantua, NJ",
+      "summary": "Demo, finishes, and fixtures—before and after.",
+      "images": {
+        "before": "assets/projects/bathroom-before.png",
+        "after": "assets/projects/bathroom-after.png"
+      }
+    },
+    {
       "title": "Paver Patio Refresh",
       "town": "Cherry Hill, NJ",
       "summary": "New patio: compacted base, edge restraints, pitch away from the foundation.",
